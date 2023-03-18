@@ -16,7 +16,16 @@ const [input, setInput] = useState(`<!-- Hello world -->
 </div>
 <p>Enter your HTML here</p>`)
 const [output, setOutput] = useState(input)
-const notify = () => toast("Copied!");
+const notify = () => toast("Copied!", {
+  position: "bottom-center",
+  autoClose: 1000,
+  hideProgressBar: false,
+  closeOnClick: true,
+  pauseOnHover: true,
+  draggable: true,
+  progress: undefined,
+  theme: "light",
+  });
 
   return (
     <Stack spacing={2}>
