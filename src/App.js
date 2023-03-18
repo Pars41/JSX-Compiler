@@ -19,7 +19,7 @@ const [output, setOutput] = useState(input)
 const notify = () => toast("Copied!", {
   position: "bottom-center",
   autoClose: 1000,
-  hideProgressBar: false,
+  hideProgressBar: true,
   closeOnClick: true,
   pauseOnHover: true,
   draggable: true,
@@ -37,7 +37,7 @@ const notify = () => toast("Copied!", {
     <ToastContainer 
     position="bottom-center"
     autoClose={1000}
-    hideProgressBar={false}
+    hideProgressBar={true}
     newestOnTop={false}
     closeOnClick
     rtl={false}
